@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./node_modules/aos/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./Assets/style.css">
     <script src="./Assets/main.js" defer></script>
     <title>Document</title>
@@ -15,27 +16,25 @@
         <header>
             <div class="header_title">BizBud</div>
             <div class="header_right">
-                <span class="home">Home</span>
-                <span>Services</span>
-                <span>About</span>
-                <span>Testimonials</span>
-                <span>Clients</span>
-                <span>Contacts</span>
+                <a href="#section1" class="home">Home</a>
+                <a href="#section2">Services</a>
+                <a href="#section3">About</a>
+                <a href="#section4">Testimonials</a>
+                <a href="#section5">Clients</a>
+                <a href="#section6">Contacts</a>
                 <button class="myCall">Call Now</button>
             </div>
         </header>
         <div class="body">
-            <div class="body_mainImg">
-                <div class="title">
+            <div data-aos="fade-up" id="section1" class="body_mainImg">
+                <div  class="title">
                     <div class="header">The Power
                         of Good Advice</div>
                     <div class="text">I'm a paragraph. Click here to add your own text and edit me.</div>
                     <button>Learn more</button>
                 </div>
-
-
             </div>
-            <div class="body_mainText">
+            <div data-aos="fade-up" id="section2" class="body_mainText">
                 <div class="header">SERVICES</div>
                 <div class="header_title">Taking Your Business to
                     the Next Level</div>
@@ -81,7 +80,7 @@
                     </div>
                 </div>
             </div>
-            <div class="about">
+            <div data-aos="fade-up" id="section3" class="about">
                 <div class="header_main">
                     <div class="header_bigTitle">ABOUT</div>
                     <div class="header_title">Our Experts Are the Finest</div>
@@ -97,7 +96,7 @@
                 </div>
                 <img src="./Assets/Images/c837a6_38f0ee339302476e9f04ad2cab58a10e~mv2.webp" alt="">
             </div>
-            <div class="body_end">
+            <div data-aos="fade-up" id="section4" class="body_end">
 
                 <div class="end_title">TESTIMONIALS</div>
                 <div class="title">“I'm a testimonial. Click to edit me and add text”</div>
@@ -105,15 +104,15 @@
                 <div class="end2">Gabriella Spring</div>
                 <div class="end3">Louise Maxwell</div>
                 <div class="last">Company name</div>
-                <div class="images">
-                    <img class="first_page" src="./Assets/Images/pngimg.com - dot_PNG8.png" alt="">
-                    <img class="second_page" src="./Assets/Images/pngimg.com - dot_PNG8.png" alt="">
-                    <img class="third_page" src="./Assets/Images/pngimg.com - dot_PNG8.png" alt="">
+                <div class="divs">
+                    <div class="point first_page"></div>
+                    <div class="point second_page"></div>
+                    <div class="point third_page"></div>
                 </div>
 
             </div>
         </div>
-        <div class="footer">
+        <div data-aos="fade-up" id="section5" class="footer">
             <div class="title">
                 <div>OUR HAPPY CLIENTS</div>
             </div>
@@ -125,8 +124,49 @@
                 <div class="component">Dave Jones</div>
             </div>
         </div>
-    </div>
+        <div data-aos="fade-up" id="section6" class="footer_end">
+            <div class="left">
+                <div class="title">CONTACT</div>
+                <div class="text_title">Let’s Work Together</div>
+                <div class="text">500 Terry Francine St. San Francisco, CA 94158
+                    info@mysite.com</div>
+                <div class="phoneNumber">Tel: 123-456-7890</div>
+                <div class="icons">
+                    <img src="./Assets/Images/in.webp" alt="">
+                    <img src="./Assets/Images/face.webp" alt="">
+                    <img src="./Assets/Images/twit.webp" alt="">
+                </div>
+            </div>
+            <div class="right_part">
+                <div class="right">
+                    <div class="myName">
+                        <div class="name">First Name</div>
+                        <input type="text">
+                        <div class="line"></div>
+                    </div>
+                    <div class="myLastName">
+                        <div class="lastName">Last Name</div>
+                        <input type ="text">
+                        <div class="line"></div>
+                    </div>
+                </div>
+                <div class="mail">Email*</div>
+                <input type="text">
+                <div class="line2"></div>
+                <div class="title">Leave us a message...</div>
+                <input type="text">
+                <div class="line2"></div>
+                <button>Submit</button>
 
+            </div>
+        </div>
+    </div>
+<script src="node_modules/aos/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+      </script>
 </body>
+
 
 </html>
